@@ -1,0 +1,62 @@
+[2022-12-02 15:17:42] Executing bootstrap tasks
+[2022-12-02 15:17:42] OpenJDK Runtime Environment 17.0.4.1+1
+[2022-12-02 15:17:42] Product org.eclipse.products.epp.package.java.2022-09
+[2022-12-02 15:17:42] Bundle org.eclipse.oomph.setup 1.25.0.v20220903-1123, build=5632, branch=e5d50810299859e75a8731a209e2f3442e7a94f5
+[2022-12-02 15:17:42] Bundle org.eclipse.oomph.setup.core 1.25.0.v20220822-1127, build=5632, branch=e5d50810299859e75a8731a209e2f3442e7a94f5
+[2022-12-02 15:17:42] Bundle org.eclipse.oomph.setup.p2 1.19.0.v20220607-1104, build=5632, branch=e5d50810299859e75a8731a209e2f3442e7a94f5
+[2022-12-02 15:17:42] Performing P2 Director (Eclipse IDE for Java Developers (2022-09))
+[2022-12-02 15:17:42] Offline = false
+[2022-12-02 15:17:42] Mirrors = true
+[2022-12-02 15:17:42] Resolving 17 requirements from 3 repositories to C:\Users\kunda\eclipse-workspace\eclipse
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:epp.package.java [4.25.0,5.0.0) (filter=(|(&(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))))
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.platform.feature.group [4.25.0,5.0.0)
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.rcp.feature.group [4.25.0,5.0.0)
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.buildship.feature.group
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.eclemma.feature.feature.group
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.egit.feature.group
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.epp.mpc.feature.group
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jdt.feature.group
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jgit.feature.group
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.feature.feature.group
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.lemminx.feature.feature.group
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.logback.feature.feature.group
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.wikitext_feature.feature.group
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tips.feature.feature.group
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tm.terminal.feature.feature.group
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.wildwebdeveloper.xml.feature.feature.group
+[2022-12-02 15:17:42] Requirement org.eclipse.equinox.p2.iu:org.eclipse.oomph.setup.feature.group
+[2022-12-02 15:17:42] Repository https://download.eclipse.org/technology/epp/packages/2022-09/202209081200
+[2022-12-02 15:17:42] Repository https://download.eclipse.org/releases/2022-09/202209141001
+[2022-12-02 15:17:42] Repository https://download.eclipse.org/oomph/updates/milestone/latest
+[2022-12-02 15:17:42] ERROR: org.eclipse.equinox.p2.transport.ecf code=1006 Unknown Host: https://download.eclipse.org/oomph/updates/milestone/latest/compositeContent.xml
+java.net.UnknownHostException: download.eclipse.org
+  at java.base/java.net.InetAddress$CachedAddresses.get(Unknown Source)
+  at java.base/java.net.InetAddress.getAllByName0(Unknown Source)
+  at java.base/java.net.InetAddress.getAllByName(Unknown Source)
+  at java.base/java.net.InetAddress.getAllByName(Unknown Source)
+  at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+  at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+  at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+  at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+  at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+  at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+  at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+  at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+  at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+  at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+  at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+  at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+  at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+  at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+  at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+  at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+  at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+  at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+  at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+  at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+  at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+  at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:251)
+  at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
+  at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+[2022-12-02 15:17:42] 

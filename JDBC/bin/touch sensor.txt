@@ -1,0 +1,152 @@
+int touchPin1 = 2;
+int touchPin2 = 3;
+int touchPin3 = 4;
+int touchPin4 = 5; // touch sensor 
+
+int ledPin1 = 6;
+int ledPin2 = 7;
+int ledPin3 = 8;
+int ledPin4 = 9; // led pin 
+
+int relayPin1 = 10;
+int relayPin2 = 11;
+int relayPin3 = 12;
+int relayPin4 = 13; // relay module 
+
+int val1 = 0;
+int val2 = 0;
+int val3 = 0;
+int val4 = 0; 
+
+int lightON1 = 0;
+int lightON2 = 0;
+int lightON3 = 0;
+int lightON4 = 0; 
+
+int touched1 = 0;
+int touched2 = 0;
+int touched3 = 0;
+int touched4 = 0; 
+
+void setup() 
+    { 
+    Serial.begin(9600); //sensor buart rate 
+    pinMode(touchPin1, INPUT); // touch sensor
+	pinMode(touchPin2, INPUT);
+	pinMode(touchPin3, INPUT);
+	pinMode(touchPin4, INPUT);
+	
+    pinMode(relayPin1, OUTPUT);
+	pinMode(relayPin2, OUTPUT);
+	pinMode(relayPin3, OUTPUT);
+	pinMode(relayPin4, OUTPUT); // Relay Module 
+	
+    pinMode(ledPin1, OUTPUT);
+	pinMode(ledPin2, OUTPUT);
+	pinMode(ledPin3, OUTPUT);
+	pinMode(ledPin4, OUTPUT); // led 
+	
+    digitalWrite(relayPin1, HIGH);
+	digitalWrite(relayPin2, HIGH);
+	digitalWrite(relayPin3, HIGH);
+	digitalWrite(relayPin4, HIGH); // Normally Relay 
+    } 
+void loop() 
+    { 
+    {
+	val1 = digitalRead(touchPin1); 
+    if
+    (val1 == HIGH && lightON1 == LOW)
+        { 
+        touched1 = 1-touched1; 
+        delay(100); 
+        } 
+    lightON1 = val1; 
+    if
+    (touched1 == HIGH) 
+        { 
+        Serial.println("Light ON"); 
+        digitalWrite(relayPin1, LOW); // Relay ON 
+        digitalWrite(ledPin1, HIGH); // led on 
+        }
+    else 
+        { 
+        Serial.println("Light OFF"); 
+        digitalWrite(relayPin1, HIGH); // Relay OFF 
+        digitalWrite(ledPin1,LOW); // led off 
+        }		
+    delay(100);
+	}
+	{
+	val2 = digitalRead(touchPin2); 
+    if
+    (val2 == HIGH && lightON2 == LOW)
+        { 
+        touched2 = 1-touched2; 
+        delay(100); 
+        } 
+    lightON2 = val2; 
+    if
+    (touched2 == HIGH) 
+        { 
+        Serial.println("Light ON"); 
+        digitalWrite(relayPin2, LOW); // Relay ON 
+        digitalWrite(ledPin2, HIGH); // led on 
+        }
+    else 
+        { 
+        Serial.println("Light OFF"); 
+        digitalWrite(relayPin2, HIGH); // Relay OFF 
+        digitalWrite(ledPin2,LOW); // led off 
+        }		
+    delay(100);
+	}
+	{
+	val3 = digitalRead(touchPin3); 
+    if
+    (val3 == HIGH && lightON3 == LOW)
+        { 
+        touched3 = 1-touched3; 
+        delay(100); 
+        } 
+    lightON3 = val3; 
+    if
+    (touched3 == HIGH) 
+        { 
+        Serial.println("Light ON"); 
+        digitalWrite(relayPin3, LOW); // Relay ON 
+        digitalWrite(ledPin3, HIGH); // led on 
+        }
+    else 
+        { 
+        Serial.println("Light OFF"); 
+        digitalWrite(relayPin3, HIGH); // Relay OFF 
+        digitalWrite(ledPin3,LOW); // led off 
+        }		
+    delay(100);
+	}
+	{
+	val4 = digitalRead(touchPin4); 
+    if
+    (val4 == HIGH && lightON4 == LOW)
+        { 
+        touched4 = 1-touched4; 
+        delay(100); 
+        } 
+    lightON4 = val4; 
+    if
+    (touched4 == HIGH) 
+        { 
+        Serial.println("Light ON"); 
+        digitalWrite(relayPin4, LOW); // Relay ON 
+        digitalWrite(ledPin4, HIGH); // led on 
+        }
+    else 
+        { 
+        Serial.println("Light OFF"); 
+        digitalWrite(relayPin4, HIGH); // Relay OFF 
+        digitalWrite(ledPin4,LOW); // led off 
+        }		
+    delay(100);
+	}
+	}

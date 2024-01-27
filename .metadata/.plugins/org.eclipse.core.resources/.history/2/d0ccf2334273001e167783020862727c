@@ -1,0 +1,12 @@
+import java.util.Stack;
+
+public class Collectiondemo3 {
+
+	public static void main(String[] args) {
+		Stack s=new Stack();
+      s.add(12);
+      s.add(13);
+      System.out.println(s);
+	}
+
+}

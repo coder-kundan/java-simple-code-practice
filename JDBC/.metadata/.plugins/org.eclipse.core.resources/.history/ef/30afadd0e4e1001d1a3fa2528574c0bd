@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author kunda
+ *
+ */
+module Myproject {
+}
